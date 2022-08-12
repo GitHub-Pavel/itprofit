@@ -1,7 +1,10 @@
 import React from 'react'
+import macbook from 'img/macbook.png'
 
 export default function App() {
   return (
-    <div>App</div>
+    <div>
+      <img src={macbook} alt="macbook" />
+    </div>
   )
 }

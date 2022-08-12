@@ -4,8 +4,8 @@
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "build": "yarn run clean-dist && webpack --config=webpack/prod.js",
-    "clean-dist": "rimraf dist/*",
+    "build": "webpack --config=webpack/prod.js",
+    "clean": "rmdir /s /q dist",
     "lint": "eslint './src/**/*.{js,ts,tsx}' --quiet",
     "start": "webpack serve --config=webpack/dev.js"
   },
@@ -44,5 +44,7 @@
     "webpack-dev-server": "^4.9.3",
     "webpack-merge": "^5.8.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "copy-webpack-plugin": "^11.0.0"
+  }
 }

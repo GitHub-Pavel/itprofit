@@ -27,6 +27,12 @@
       ],
       "element/*": [
         "src/features/*"
+      ],
+      "styles/*": [
+        "src/styles/*"
+      ],
+      "type/*": [
+        "src/@types/*"
       ]
     },
     "allowSyntheticDefaultImports": true,

@@ -1,0 +1,4 @@
+@use "mixins" as mixin;
+
+@include mixin.font("Montserrat", "Montserrat-Regular", 400, "normal");
+@include mixin.font("Montserrat", "Montserrat-Medium", 500, "normal");

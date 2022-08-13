@@ -31,9 +31,18 @@
       "styles/*": [
         "src/styles/*"
       ],
+      "config/*": [
+        "src/configs/*"
+      ],
+      "lib/*": [
+        "src/libs/*"
+      ],
       "type/*": [
         "src/@types/*"
-      ]
+      ],
+      "utils/*": [
+        "src/utils/*"
+      ],
     },
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,

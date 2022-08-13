@@ -65,6 +65,7 @@ html {
 
 body {
   font-family: const.$Mon;
+  font-weight: 400;
 }
 
 /*
@@ -83,3 +84,31 @@ body {
   border: 0;
   clip: rect(0 0 0 0);
 }
+
+/*
+ * ==================================================================================
+ * Heading
+ * ==================================================================================
+ */
+
+h2, .h2 {
+  font-family: const.$Mon; 
+  font-weight: 500;
+  font-size: 3.5rem;
+  line-height: .93em;
+}
+
+h3, .h3 {
+  font-family: const.$Mon; 
+  font-weight: 500;
+  font-size: 1.7rem;
+  line-height: 1.25em;
+}
+
+h4, .h4 {
+  font-family: const.$Mon; 
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.4em;
+}
+

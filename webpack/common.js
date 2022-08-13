@@ -11,6 +11,9 @@ module.exports = {
       img: resolve(__dirname, "../src/images"),
       styles: resolve(__dirname, "../src/styles"),
       element: resolve(__dirname, "../src/features"),
+      config: resolve(__dirname, "../src/configs"),
+      lib: resolve(__dirname, "../src/libs"),
+      utils: resolve(__dirname, "../src/utils"),
     }
   },
   context: resolve(__dirname, "../src"),
@@ -23,16 +26,16 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        use: ["style-loader", {loader: "css-loader", options: {url: false}}],
       },
       {
         test: /\.(scss|sass)$/,
-        use: ["style-loader", "css-loader", "sass-loader"]
+        use: ["style-loader", {loader: "css-loader", options: {url: false}}, "sass-loader"]
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
         use: [
-          "file-loader?hash=sha512&digest=hex&name=img/[contenthash].[ext]",
+          "file-loader?hash=sha512&digest=hex&name=img/[name].[ext]",
           "image-webpack-loader?bypassOnDebug&optipng.optimizationLevel=7&gifsicle.interlaced=false",
         ],
       },
@@ -48,5 +51,6 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({ template: "index.html" }),
+    new CopyPlugin({patterns: [{ from: "../src/fonts/**/*", to: "./" }]}),
   ],
 };

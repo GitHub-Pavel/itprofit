@@ -4,6 +4,7 @@ import { useSwiper, useSwiperSlide } from 'swiper/react'
 import styles from './Slider.module.scss'
 import classnames from 'classnames'
 import { SlideNavigation } from 'type/slider'
+import { getFixedPathForDeploy } from 'utils/path'
 
 import arrowLeft from 'img/arrow_left.svg'
 import arrowRight from 'img/arrow_right.svg'
@@ -28,10 +29,10 @@ export default function SliderNavigation({nextTag, prevTag}: SlideNavigation) {
   return (
     <div className={styles.navigation}>
       <CustomPrevTag onClick={onLeftClickHandler} className={prevClasses}>
-        <ReactSVG src={arrowLeft} wrapper="span"/>
+        <ReactSVG src={getFixedPathForDeploy(arrowLeft)} wrapper="span"/>
       </CustomPrevTag>
       <CustomNextTag onClick={onRightClickHandler} className={nextClasses}>
-        <ReactSVG src={arrowRight} wrapper="span"/>
+        <ReactSVG src={getFixedPathForDeploy(arrowRight)} wrapper="span"/>
       </CustomNextTag>
     </div>
   )

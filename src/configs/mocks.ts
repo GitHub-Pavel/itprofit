@@ -1,4 +1,5 @@
 import { ISlide } from "type/slider";
+import { getFixedPathForDeploy } from "utils/path";
 
 import slider1 from 'img/slider_00.jpg';
 import slider2 from 'img/slider_01.jpg';
@@ -7,7 +8,7 @@ export const MOCK_SLIDER: ISlide[] = [
   {
     heading: "Создание корпоративного сайта для холдинга «АМКОДОР»",
     paragraph: "Разработать и запустить корпоративный сайт для холдинга “АМКОДОР” для развития дилерской сети на рынках Беларуси и стран СНГ.",
-    image: slider1,
+    image: getFixedPathForDeploy(slider1),
     color: "green",
     items: {
       "Направление": "WEB-разработка",
@@ -59,7 +60,7 @@ export const MOCK_SLIDER: ISlide[] = [
   {
     heading: "Создание маркетплейса для бизнеса по перепродаже одежды",
     paragraph: "Brands&Charity — благотворительная онлайн — платформа для перепродажи брендовых вещей, цель которой превратить ненужные одним людям вещи в полезный ресурс для других.",
-    image: slider2,
+    image: getFixedPathForDeploy(slider2),
     color: "purple",
     items: {
       "Направление": "WEB-разработка",

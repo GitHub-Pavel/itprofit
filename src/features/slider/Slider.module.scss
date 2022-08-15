@@ -37,7 +37,7 @@
   }
 
   &__macbook {
-    background: url(../img/macbook.png) no-repeat center center / contain;
+    background: url(./img/macbook.png) no-repeat center center / contain;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -80,7 +80,7 @@
     background-blend-mode: normal, multiply;
     box-shadow: inset 0.860527px 0.860527px 0.860527px rgba(53, 74, 66, 0.2);
     backdrop-filter: blur(30px);
-    background: linear-gradient(0deg, rgba(0, 37, 23, 0.3), rgba(0, 37, 23, 0.3)), url(../img/glass_texture.png);
+    background: linear-gradient(0deg, rgba(0, 37, 23, 0.3), rgba(0, 37, 23, 0.3)), url(./img/glass_texture.png);
 
     &__title {
       margin-bottom: 16px;
